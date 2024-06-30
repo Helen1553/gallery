@@ -1,0 +1,85 @@
+body {
+    font-family:Arial, Helvetica, sans-serif;
+    background-color: rgb(231, 243, 247);
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    padding: 5px;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 25vh;
+    width: 100vw;
+
+    background-color:#1b275f;
+    color: #fff;
+    text-align: center;
+}
+
+.h1 {
+    font-size:xx-large;
+    font-weight: bolder;
+}
+
+nav ul {
+    list-style: none; /*для того, чтобы не было обозначений пунктов, т.е. жирных точек*/
+    display: flex; /*для того, чтобы содержимое навигационной панели выстраивалось горизонтально, а не вертикально, как по умолчанию выстраиваются списки*/
+    justify-content: space-around;
+
+    font-size: larger;
+    font-weight: bold;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none; /*для того, чтобы не было подчёркивания ссылок по умолчанию*/
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 0 40px 0;
+
+    height: 100vh;
+}
+
+h2 {
+    height: 5%;
+    width: 60%;
+
+    text-align: center;
+}
+
+img {
+    width: 40%;
+    height: 90%;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0,0,0,.7); /*чтобы у границ каждой фотографии была небольшая тень (чтобы фото не расплывались)*/
+    border: solid rgb(247, 245, 245);
+    border-radius: 30%;
+}
+
+img:hover {
+    transform: scale(1.1); /*для того, чтобы при наведении курсора на фотографию - она увеличивалась*/
+    transition: transform .5s ease; /*для того, чтобы фотография увеличивалась, при наведении курсора на нёё, не резко, а плавно - за 0,5 секунды*/
+}
+
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 15vh;
+    width: 100vw;
+
+    background-color: #1b275f;
+    color: #fff;
+}
